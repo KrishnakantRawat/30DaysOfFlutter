@@ -5,7 +5,17 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+  String name = "Raha";
+  bool isMale = true;
+  int days = 30;
+  double pi = 3.14;
+  num temp = 30;
+  num temp2 = 30.5;
+  //num canbe used for both int and double
+  var day = "tuesday";
+  // var canbe used for all datatypes
+  static const phi = 3.14;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +23,7 @@ class MyApp extends StatelessWidget {
       home: Material(
         child: Center(
           child: Container(
-            child: Text("Hello Everyone"),
+            child: Text("Hello $name learn pi = $pi in $days days"),
           ),
         ),
       ),
