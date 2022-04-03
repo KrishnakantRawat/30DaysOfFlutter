@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/pages/homepage.dart';
 import 'package:flutter_ecommerce/pages/loginpage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,9 +16,10 @@ class MyApp extends StatelessWidget {
       // home: Homepage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.poppins().fontFamily,
       ),
-      initialRoute: "/homepage",
+      // initialRoute: "/homepage",
       routes: {
         "/": (context) => new LoginPage(),
         //diffrence between class and function is that first letter of class is capital whereas in function first letter is small, this is to know the diffrence.
