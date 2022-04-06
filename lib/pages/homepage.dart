@@ -19,7 +19,7 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Hello $name learn pi = $pi in $days days"),
+          // child: Text("Hello $name learn pi = $pi in $days days"),
         ),
       ),
       drawer: Drawer(),

@@ -68,9 +68,9 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         validator: (String? value) {
                           if (value!.isEmpty) {
-                            return "Username cann't be empty";
-                          } else if (value.length < 6) {
-                            return "Username should have 6 characters";
+                            return "Username can't be empty.";
+                          } else if (value.length < 3) {
+                            return "Username should have 3 characters";
                           }
 
                           return null;
