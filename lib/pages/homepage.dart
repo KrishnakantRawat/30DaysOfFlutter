@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 class Homepage extends StatelessWidget {
   final String name = "Raha";
   final bool isMale = true;
@@ -15,14 +17,24 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dokan"),
+        // backgroundColor: Colors.white,
+        // elevation: 0.0,
+        // iconTheme: IconThemeData(color: Colors.black54),
+        title: Text(
+          "Dokan",
+          style: TextStyle(
+            color: Color(0xFF333333),
+            fontWeight: FontWeight.w600,
+            fontSize: 24,
+          ),
+        ),
       ),
       body: Center(
         child: Container(
-          // child: Text("Hello $name learn pi = $pi in $days days"),
-        ),
+            // child: Text("Hello $name learn pi = $pi in $days days"),
+            ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
